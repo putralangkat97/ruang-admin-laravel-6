@@ -62,4 +62,8 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/ui-colours', function () {
         return view('admin.pages.ui-colours');
     })->name('ui-colours');
+
+    Route::get('/404', function () {
+        return view('admin.pages.404');
+    })->name('404');
 });
