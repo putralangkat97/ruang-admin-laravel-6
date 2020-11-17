@@ -100,8 +100,8 @@
             </div>
         </div>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+    <li class="nav-item{{ request()->is('admin/charts') ? ' active' : ''}}">
+        <a class="nav-link" href="{{ route('charts') }}">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Charts</span>
         </a>

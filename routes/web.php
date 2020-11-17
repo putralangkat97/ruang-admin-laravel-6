@@ -70,4 +70,8 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/blank-page', function () {
         return view('admin.pages.blank-page');
     })->name('blank-page');
+
+    Route::get('/charts', function () {
+        return view('admin.pages.charts');
+    })->name('charts');
 });
