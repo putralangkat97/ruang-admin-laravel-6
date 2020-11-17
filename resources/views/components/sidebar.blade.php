@@ -88,7 +88,7 @@
             <span>Pages</span>
         </a>
         <div id="collapsePage" class="collapse
-        @if (request()->is('admin/404') || request()->is('admin/datatables'))
+        @if (request()->is('admin/404') || request()->is('admin/blank-page'))
         show
         @endif" aria-labelledby="headingPage" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
@@ -96,7 +96,7 @@
                 <a class="collapse-item" href="{{ route('login') }}">Login</a>
                 <a class="collapse-item" href="{{ route('register') }}">Register</a>
                 <a class="collapse-item{{ request()->is('admin/404') ? ' active' : '' }}" href="{{ route('404') }}">404 Page</a>
-                <a class="collapse-item" href="blank.html">Blank Page</a>
+                <a class="collapse-item{{ request()->is('admin/blank-page') ? ' active' : '' }}" href="{{ route('blank-page') }}">Blank Page</a>
             </div>
         </div>
     </li>

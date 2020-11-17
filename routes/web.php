@@ -66,4 +66,8 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/404', function () {
         return view('admin.pages.404');
     })->name('404');
+
+    Route::get('/blank-page', function () {
+        return view('admin.pages.blank-page');
+    })->name('blank-page');
 });
