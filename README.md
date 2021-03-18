@@ -1,6 +1,9 @@
 ## Original
 [RuangAdmin](https://github.com/indrijunanda/RuangAdmin)
 
+## Updated to Laravel 8
+// TODO
+
 ## Tentang Aplikasi
 Ini adalah project laravel 6 yang sudah include dengan template admin dari RuangAdmin.
 
